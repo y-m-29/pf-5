@@ -1,0 +1,177 @@
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 2;
+  letter-spacing: 0.14em;
+  font-size: 16px;
+  color: rgb(80, 79, 79);
+  font-family: "Noto Sans JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  margin-top: 0;
+  display: none;
+}
+
+/***** header部分 *****/
+
+header {
+  box-shadow: 0px 1px 4px rgba(216, 216, 216, 0.25);
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  width: 100%;
+}
+
+.header-title {
+  font-size: 48px;
+  letter-spacing: 0.14em;
+  font-weight: 400;
+  margin-left: 100px;
+  padding: 20px 0;
+}
+
+.header-title:hover {
+  opacity: 0.7;
+}
+
+.pf {
+  margin-top: 200px;
+}
+
+.pf-inner {
+  display: flex;
+  margin: 50px 100px;
+}
+
+.pf-img {
+  width: 600px;
+  height: auto;
+  border: 1px solid #d8d8d8;
+}
+
+.comment {
+  margin-bottom: 50px;
+  margin-left: 30px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  margin-bottom: 50px;
+}
+
+.comment-title {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  margin-bottom: 30px;
+}
+
+table {
+  margin-bottom: 30px;
+}
+
+th {
+  width: 150px;
+  text-align: left;
+  padding-right: 10px;
+  font-weight: 500;
+}
+
+/* Footer部分 */
+
+.footer {
+  display: flex;
+  margin: 50px 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-p {
+  font-size: 14px;
+  text-align: right;
+}
+
+.back {
+  position: relative;
+  cursor: pointer;
+}
+
+.back:hover {
+  cursor: pointer;
+}
+/* ホバー時、１枚目透過 */
+.back:hover img:first-of-type {
+  opacity: 0;
+}
+
+/* ２枚目の位置と透過 */
+.back img:last-of-type {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+}
+
+/* ホバー時２枚目表示 */
+.back:hover img:last-of-type {
+  opacity: 1;
+}
+
+/* レスポンシブ */
+
+/* 768px以上 */
+@media screen and (min-width: 768px) {
+  .pf-sp {
+    display: none;
+  }
+}
+
+/* 767px以下 */
+@media screen and (max-width: 767px) {
+  .pf {
+    display: none;
+  }
+
+  /* header部分 */
+
+  .header-title {
+    font-size: 36px;
+    letter-spacing: 0.14em;
+    font-weight: 400;
+    margin-left: 100px;
+    padding: 20px 0;
+    margin: 0 30px;
+  }
+
+  .pf-sp{
+    margin-top: 100px;
+  }
+
+  .pf-img {
+    width: 70%;
+    margin: 50px 0;
+  }
+
+  .img{
+    text-align: center;
+  }
+  .comment {
+    margin-bottom: 100px;
+    margin-left: 0px;
+  }
+
+  .pf-inner {
+    margin: 0 30px;
+    display: block;
+  }
+
+  .footer {
+    display: flex;
+    margin: 50px 30px;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+/*# sourceMappingURL=style.css.map */
